@@ -262,33 +262,33 @@ body {
     background-color:rgb(37,33,34);
     color: white;
 }
-/*
-.footer_ul {
-    list-style: none;
-    display: block;
-    position: absolute;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+.footer_h3 {
+   padding: 1rem;
+   margin-left: 3rem;
 }
 
-.fecha {
-    background-color: red;
-    padding: 0.5rem;
-    display: block;
-    position: absolute;
-    height: 3.5rem;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    
-} */
+.footer_contenedor_uno {
+    display: grid;
+    grid-template-columns: 1.8fr 1.25fr;
+    column-gap: 2rem;
+    margin:0 2.5rem;
+}
+.calendario1 {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-left: 2.5rem;   
+}
+
 
 .calendario_flecha{
     background-image: url(./images/flecha.png);
-    width: 7%;
+    width:13%;
     background-size:auto 100%;
     background-repeat: no-repeat;
     padding: 1em 0;
     margin: 1em 0 0 0;
+    display: block;
 
 }
 .calendario_texto{
@@ -296,5 +296,22 @@ body {
     text-align: center;
 }
 .calendario_numero{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+}
+
+.calendario_parrafo h3, p{
+    padding: 0;
+
+}
+
+.calendario_parrafo p {
+    color: #858484;
+}
+.footer_about{
+    padding: 1rem;
+}
+
+.footer_about img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
