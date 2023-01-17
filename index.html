@@ -29,8 +29,6 @@
       </div>
     </div>
     <div class="howdy_background">
-     <!--<img src="./images/pic01.jpg" alt="" />--> 
-      
       <div class="howdy_cuadrado">
         <h2>Howdy. This is Dopetrope.</h2>
         <p>A responsive template by HTML5 UP</p>
@@ -156,8 +154,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="blog"></div>
-      <div class="blog_imagenes"></div> -->
     
       <div class="portafolio">
         <hr class="hr" />
@@ -200,7 +196,7 @@
   <h3>Contact</h3>
   <hr class="hr" />
 </div>
-    <form class="formulario">
+<form  action="#" method="post" id="formulario" class="formulario" onsubmit="return false">
       <div class="etiqueta">
         <!-- <label for="name">Nombre</label> -->
         <input
@@ -252,6 +248,21 @@
         </button>
       </div>
     </form>
+    <div class="formulario dashed">
+      <h3 id="datos">Datos del formulario</h3>
+      <hr>
+      <p id="dato_nombre">
+        Nombre: <span></span>
+      </p>
+      <p id="dato_email">
+        Email: <span></span>
+      </p>
+      <p id="dato_phone">
+        telefono: <span></span>
+      </p><p id="dato_mensaje">
+        Mensaje: <span></span>
+      </p>
+    </div>
     <!-- Fin del formulario -->
 
 
@@ -413,14 +424,23 @@
     </div>
     <div class="ultimo_div">
       <ul class="ultimo_div_ul">
-        <li>&#169 Untitled.All rights reserved.</li>
-        <li>Design: <a href="">HTML5UP</a>
+        <li class="border_right linea_horizontal">&#169 Untitled.All rights reserved.</li>
+        <li class="border_right linea_horizontal">Design: <a href="">HTML5UP</a>
         </li>
-        <li>Demo Images: <a href="">Dreametry Doodle</a></li>
+        <li class="border_right">Demo Images: <a href="">Dreametry Doodle</a></li>
       </ul>
     </div>
 
   </footer>
 
+  <div class="ejScript" id="ejScript" >
+    <h3>El rango de numeros es:</h3>
+    <p id="bucleJava">
+      Mira en la consola</p>
+  </div>
+
+
+  <script src="custom.js"></script>
+  <script src="formulario.js"></script>
   </body>
 </html>

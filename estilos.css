@@ -17,6 +17,7 @@ body {
 
 .menu ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
 }
@@ -30,25 +31,8 @@ body {
     color: white;
     border-radius: 5%;
 }
-/*
-.howdy_background {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-image: url("./images/pic01.jpg");
-    background-position: center;
-   
-    background-size: 69rem;
 
-}
- .howdy_background img {
-    /* background-image: url(images/pic01.jpg);
-    height: 60rem;  
-    width: 100%;
-    height: 25rem;
-    
 
-}  */
 .howdy_background{
     background: #CCE8F4 url(./images/pic01.jpg);
     background-position: center center;
@@ -60,18 +44,7 @@ body {
     margin: 0.5em 0 0 0;
 }
 
-/*.howdy_cuadrado {
-    position: absolute;
-    background-color: black;
-    color: white;
-    top: 80%;
-    left: 50%;
-    height: 25%;
-    width: 30%;
-    margin: 0 auto;
-    text-align: center;
-    
-}*/
+
 .howdy_cuadrado{
     background-color: black;
     display: inline-block;
@@ -91,8 +64,6 @@ body {
     gap: 5rem;
     padding: 4rem; 
     flex-wrap: wrap;
-    /* height: 25rem; */
-    /* margin: 0; */
 }
 
 .tercer_contenedor_columnas {
@@ -191,10 +162,7 @@ body {
     font-weight: bold;
 } 
 
-/* .portafolio_imagenes_div h3, p {
-    padding: 1.5rem;
-    margin: 0;  
-} */
+
 
 
 .portafolio_imagenes_div p {
@@ -242,7 +210,7 @@ body {
 .blog_enlace a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 .boton_blog1 {
@@ -250,11 +218,12 @@ body {
     padding: 1rem 1.2rem;
     border-radius: 5%;
     
+    
 }
 
 .boton_blog2 {
     background-color: black;
-    padding: 1rem 1.2rem;
+    padding: 1rem 2.2rem;
     border-radius: 5%;
 }
 
@@ -263,19 +232,6 @@ body {
 }
 
 
-/*
-.enlace_imagen1::before {
-    content: url("./images/icono1.png");
-    margin-right: 0.5rem;
-    margin-left: -1.5rem;
-}
-
-.enlace_imagen2::before {
-    content: url("./images/icono2.png");
-    margin-right: 0.5rem;
-    margin-left: -1.5rem;
-} */
-
 /* Estilos para el formulario de contacto */
 
 .formulario {
@@ -283,6 +239,13 @@ body {
     /* padding: 2rem; */
     margin: 0 auto;
     padding-bottom: 5rem;   
+}
+
+.dashed{
+    border: 3px dashed black;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: #c6c6c6;
 }
 
 .etiqueta {
@@ -459,10 +422,8 @@ textarea {
 }
 .redes_sociales_parrafo {
     display: flex;
-    /* justify-content: space-between; */
     gap: 1.5rem;
-    /* margin-top: 2rem; */
-    
+      
 }
 
 .redes_sociales_parrafo_p{
@@ -505,24 +466,17 @@ textarea {
 /* Fin estilos iconos redes sociales */
 
 
-.boton_javascript {
-    align-items: center;
-}
-.div_javascript {
-    display: flex;
-    justify-content: center;
-}
-
 .ultimo_div {
     /* margin-top: 4rem; */
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
 
 }
 .ultimo_div_ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
     padding: 0.5rem;
     list-style: none;
     background-color: #302f2f;
@@ -530,10 +484,163 @@ textarea {
 
 .ultimo_div_ul li {
     color: #858484;
-    border-right: 1px solid #858484;
 }
 
+.linea_horizontal {
+    border-right: 1px solid #858484;
+}
+.border_right {
+    
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
 .ultimo_div_ul li a {
     color: white;
 }
 
+.footer_about_btn{
+    padding: 1rem;
+    border-radius: 5%;
+    background-color: rgb(213,35,73);
+   
+}
+.footer_about_btn.activo{
+    padding: 1rem;
+    border-radius: 5%;
+    background-color: rgb(213,35,73);
+   
+}
+.footer_about_btn a {
+    color: white;
+    text-decoration: none;
+}
+.footer_about_btn .activo a {
+    color: white;
+    text-decoration: none;
+}
+
+/*#ejScript{
+    color: white;
+}*/
+
+
+.ejScript {
+    background-color: rgb(227, 204, 140);
+    border-top: 1px solid black;
+    padding-top: 3rem;
+    position: fixed;
+    bottom:-100%;
+    transition: all 0.25s ease-in;
+    width: 100%;
+    padding: 3rem 0;
+    text-align: center;
+}
+.ejScript.activo {
+    bottom: 0;   
+}
+
+
+#bucleJava{
+    background-color: bisque;
+    width:16em; 
+    padding:1em; 
+    border:1px solid #d9d9d9;
+     margin :1em auto;
+     
+}
+
+
+
+
+/* Responsive tablet */
+@media screen and (min-width: 621px) and (max-width: 900px){
+    .portafolio_imagenes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2.3rem;      
+    }
+
+    .portafolio_imagenes_div {
+         width: 100% 
+    }
+
+    .contenedor_blog {
+        
+        padding: 2.3rem;
+    }
+
+    .footer_contenedor_uno {
+        display: block;
+    }
+
+    .linea_horizontal {
+        border-right: none;
+    }
+    .border_right {
+        
+        padding-right: 0;
+        padding-left: 0;;
+    }
+
+}
+
+
+/* Responsive mobile */
+
+@media screen and (max-width: 620px){
+     
+    .portafolio_imagenes {
+        display: block;
+        padding: 2rem;    
+    }
+
+    .portafolio_imagenes_div {
+        width: auto;
+        margin-bottom: 2rem;  
+    }
+
+    .contenedor_blog {
+        display: block;
+        padding: 2rem;
+    }
+
+    .formulario {
+        width: 80%;
+    }
+    
+    .footer_contenedor_uno {
+        display: block;
+    }
+
+    .footer_contenedor_dos {
+        display: block;
+    }
+
+    .calendario1 {
+        display: block;
+    }
+
+    .calendario_flecha{ 
+        width:25%; 
+    }
+
+    .linea_horizontal {
+        border-right: none;
+    }
+    .border_right {
+        
+        padding-right: 0;
+        padding-left: 0;;
+    }
+
+    .ultimo_div {
+        line-height: 2rem;
+        width: 50%;
+    }
+
+    .menu ul {
+        display: inline-block;  
+        font-weight: bolder;
+        padding-left: 0;
+    }
+}
